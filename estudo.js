@@ -13,3 +13,9 @@ function escreva(){
     document.write(tabuada+" x 9 = "+(tabuada*9)+"<br>");
     document.write(tabuada+" x 10 = "+(tabuada*10)+"<br>");
 }
+
+let lista = ["Terra" ,"Marte" ,"Saturno" ,"Jupter" ,"Vênus"];
+
+function mostraLista(){
+    document.write("Panela " + lista[4])
+}
