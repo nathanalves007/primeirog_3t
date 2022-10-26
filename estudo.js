@@ -3,6 +3,24 @@ function total(){
   let c = document.getElementById("valor").value;
   let j = document.getElementById("juros").value;
   let t = document.getElementById("meses").value;
+  if(!Number(c)){
+    alert("O valor do capital deve ser um numero.");
+    document.getElementById("Capital").value = "";
+    document.getElementById("Capital").focus();
+    return
+  }
+  if(!Number(j)){
+    alert("O valor dos juros deve ser um numero.");
+    document.getElementById("juros").value = "";
+    document.getElementById("juros").focus();
+    return
+  }
+  if(!Number(t)){
+    alert("A quantidade de meses deve ser um numero.");
+    document.getElementById("meses").value = "";
+    document.getElementById("meses").focus();
+    return
+  }
   let r = 0;
   for(let i = 1; i <= t; i++){
       r = c * (1 + (j/100));
